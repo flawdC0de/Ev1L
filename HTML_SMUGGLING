@@ -2,7 +2,7 @@
 
 // A Base64 Meterpreter .exe is stored as a Blob inside of a JS variable. A trigger is created via an anchor tag that will download the file once the user browses the page. 
 
-//After generating the payload using windows/x64/meterpreter/reverse_https within msfvenom, we will Base64 encode it and create a function (base64ToArrayBuffer) that will convert it back to its original form and store it in an array. 
+// After generating the payload using windows/x64/meterpreter/reverse_https within msfvenom, we will Base64 encode it and create a function (base64ToArrayBuffer) that will convert it back to its original form and store it in an array. 
 
 https://outflank.nl/blog/2018/08/14/html-smuggling-explained/
 https://developer.mozilla.org/en-US/docs/Web/API/Blob
