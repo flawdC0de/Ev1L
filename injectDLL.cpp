@@ -1,11 +1,4 @@
-/*
 
- Red Team Operator course code template
- DLL injector
- 
- author: reenz0h (twitter: @sektor7net)
-
-*/
 #include <windows.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -47,7 +40,7 @@ int main(int argc, char *argv[]) {
 	HANDLE pHandle;
 	PVOID remBuf;
 	PTHREAD_START_ROUTINE pLoadLibrary = NULL;
-	char dll[] = "Z:\\RTO\\07.Code_Injection\\02.DLL\\implantDLL.dll";
+	char dll[] = "Z:\\MalDev\\07.Code_Injection\\02.DLL\\implantDLL.dll";
 	char target[] = "notepad.exe";
 	int pid = 0;
 	
